@@ -25,7 +25,7 @@ void setup() {
   pinMode(6,OUTPUT);  //pin 6 dijadikan pin keluaran (output)
   pinMode(7,OUTPUT);  //pin 7 dijadikan pin keluaran (output)
 
-  //Sebelum mulakan kerdipan LED, kesemua LED perlu dipadam terlebih dahulu 
+  //Sebelum mulakan kerdipan LED, pastikan kesemua LED dipadamkan 
   digitalWrite(2,PADAM);
   digitalWrite(3,PADAM);
   digitalWrite(4,PADAM);
@@ -46,7 +46,7 @@ void loop() {
   digitalWrite(6,PADAM);
   digitalWrite(7,PADAM);
 
-  tunggu(500);    //tunggu 0.5 saat sebelum tukar nyalaan
+  tunggu(500);    //tunggu 0.5 (500 milisaat) saat sebelum tukar nyalaan
 
   //Setkan LED1, LED2 dan LED3 padam. Manakala LED4, LED5 dan LED6 nyala
   digitalWrite(2,PADAM);
