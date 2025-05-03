@@ -12,7 +12,7 @@ void setup() {
   // put your setup code here, to run once:
   servomotor.attach(9);   //Pin 9 digunakan untuk mengawal servo motor
   servomotor.write(0);  //setkan posisi servo motor pada 0 darjah
-  delay(3000);          //tunggu 3 saat untuk memberi masa servo motor setkan kedudukan pada 0 darjah
+  delay(3000);          //tunggu 3 saat untuk memberi masa servo motor membuat putaran ke kedudukan 0 darjah
 }
 
 void loop() {
