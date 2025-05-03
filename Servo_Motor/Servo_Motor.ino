@@ -26,7 +26,7 @@ void loop() {
     servomotor.write(sudut);    //servo motor diputarkan ke nilai sudut terkini
     delay(500);                 //tunggu 0.5 saat sebelum tambah nilai sudut
   }//nilai sudut meningakat 10 darjah dan nilai sudut disemak semula sama ada masih kecil atau sama 180
-  //jika nilai sudut sudah melebihi 180 darjah, arahan dalam gelung tidak lagi dilaksanakan, arahan seterusnya dilaksanakan
+  //jika nilai sudut sudah melebihi 180 darjah, arahan dalam gelung tidak lagi diulang, arahan seterusnya dilaksanakan
 
   //sudut = 180 : Nilai awalan sudut dijadikan = 180
   //sudut >= 0 : kondisi ulangan, jika nilai sudut tidak kurang dari 0, arahan-arahan didalam gelung diulangi
@@ -36,6 +36,6 @@ void loop() {
     servomotor.write(sudut);    //servo motor diputarkan ke nilai sudut terkini
     delay(500);                 //tunggu 0.5 saat sebelum tambah nilai sudut
   }//nilai sudut berkurangan 10 darjah dan nilai sudut disemak semula sama ada masih besar atau sama 0
-  //jika nilai sudut sudah menjadi kurang dari 0 darjah, arahan dalam gelung tidak lagi dilaksanakan, dan arahan seterusnya dilaksanakan
+  //jika nilai sudut sudah menjadi kurang dari 0 darjah, arahan dalam gelung tidak lagi diulang, dan arahan seterusnya dilaksanakan
 
 }
