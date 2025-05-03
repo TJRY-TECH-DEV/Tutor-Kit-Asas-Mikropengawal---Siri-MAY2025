@@ -19,23 +19,23 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //sudut = 0 : Nilai awalan sudut dijadikan = 0
-  //sudut <= 180 : ulang arahan-arahan didalam gelung selagi sudut tidak melebihi 180 darjah
+  //sudut <= 180 : kondisi ulangan, jika nilai sudut tidak melebihi 180 darjah, arahan-arahan didalam gelung diulangi
   //sudut += 10 : Setelah selesai arahan-arahan didalam gelung, nilai sudut meningkat 10 darjah 
   for(sudut = 0 ; sudut <= 180 ; sudut += 10 )  
   {
     servomotor.write(sudut);    //servo motor diputarkan ke nilai sudut terkini
     delay(500);                 //tunggu 0.5 saat sebelum tambah nilai sudut
-  }//nilai sudut meningakat 10 darjah dan arahan-arahan dalam gelung ini diulang selagi sudut tidak melebihi 180
-  //jika nilai sudut sudah melebihi 180 darjah, arahan dalam gelung tidak lagi dilaksanakan, dan arahan dibawah pula dilaksanakan
+  }//nilai sudut meningakat 10 darjah dan nilai sudut disemak semula sama ada masih kecil atau sama 180
+  //jika nilai sudut sudah melebihi 180 darjah, arahan dalam gelung tidak lagi dilaksanakan, arahan seterusnya dilaksanakan
 
   //sudut = 180 : Nilai awalan sudut dijadikan = 180
-  //sudut >= 0 : Ulang arahan-arahan didalam gelung selagi nilai sudut lebih besar atau sama 0
+  //sudut >= 0 : kondisi ulangan, jika nilai sudut tidak kurang dari 0, arahan-arahan didalam gelung diulangi
   //sudut -= 10 : Setelah selesai arahan-arahan didalam gelung, nilai sudut berkurnang 10 darjah 
   for(sudut = 180 ; sudut >= 0 ; sudut -= 10 )  
   {
     servomotor.write(sudut);    //servo motor diputarkan ke nilai sudut terkini
     delay(500);                 //tunggu 0.5 saat sebelum tambah nilai sudut
-  }//nilai sudut meningakat 10 darjah dan arahan-arahan dalam gelung ini diulang selagi sudut tidak melebihi 180
+  }//nilai sudut berkurangan 10 darjah dan nilai sudut disemak semula sama ada masih besar atau sama 0
   //jika nilai sudut sudah menjadi kurang dari 0 darjah, arahan dalam gelung tidak lagi dilaksanakan, dan arahan seterusnya dilaksanakan
 
 }
